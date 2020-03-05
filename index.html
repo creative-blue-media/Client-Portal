@@ -17,7 +17,7 @@
 
     <div class="jumbotron" id="content">
         <div class="sidebar container col-3">
-              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <li class="nav-item">
                     <a href="#"><img class="logo" src="https://creativebluemediacontent.s3-us-west-1.amazonaws.com/Logo+Light.svg"></a>
                 </li>
@@ -67,18 +67,20 @@
               <div class="row project-nav" style="width: 100%;">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
+                      <a class="nav-link active" href="#">Breif</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Timeline</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Chat</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                  </ul>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="breif" role="tabpanel" aria-labelledby="home-tab">breif</div>
+                    <div class="tab-pane fade" id="timeline" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                </div>s
             </div>
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
