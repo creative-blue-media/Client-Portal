@@ -1,0 +1,31 @@
+#content{
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    padding: 0;
+}
+/************************************/
+/*              SideBar
+/************************************/
+.sidebar{
+    min-height: 100%;
+    position: absolute;
+    background-color: white;
+}
+.sidebar .nav-item{
+    width:100%;
+}
+.logo {
+    padding-top:15px;
+    padding-bottom:15px;
+}
+/************************************/
+/*              Page Content
+/************************************/
+.page-content{
+    min-height: 100%;
+    position: absolute;
+    padding: 0;
+    right:0;
+}
+
