@@ -11,6 +11,7 @@
     min-height: 100%;
     position: absolute;
     background-color: white;
+    border-right: solid #efefef 1px;
 }
 .sidebar .nav-item{
     width:100%;
@@ -27,5 +28,11 @@
     position: absolute;
     padding: 0;
     right:0;
+    background-color: white;
+}
+.project-nav{
+    margin: 0;
+    position: relative;
+    padding:10px;
 }
 
