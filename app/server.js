@@ -16,7 +16,7 @@ const path = require("path");
 let app = express();
 let server = http.createServer(app);
 
-
+// app.use(express.static('public'))
 // variables to Api for backend routes
 let user = require("./models/user/UserController")(app, express);
 let project = require("./models/project/ProjectController")(app, express);
@@ -40,6 +40,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended:true}));
  *  Set up routes for backend below
  *
  */
+
 
 app.use('/api/users', user);
 app.use('/api/projects', project);

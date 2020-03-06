@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome.css" >
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Client Portal</title>
 </head>
 
@@ -69,34 +68,36 @@
                 <!-- **********************************
                 *              Dashboard
                 *********************************** -->
-                <div class="tab-pane fade show active" id="v-pills-dashboard" data-toggle="pill" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
-                  <nav class="project-nav">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <a class="nav-item nav-link active" id="nav-brief-tab" data-toggle="tab" href="#nav-brief" role="tab" aria-controls="nav-breif" aria-selected="true">Breif</a>
-                      <a class="nav-item nav-link" id="nav-timeline-tab" data-toggle="tab" href="#nav-timeline" role="tab" aria-controls="nav-timeline" aria-selected="false">Timeline</a>
-                      <a class="nav-item nav-link" id="nav-chat-tab" data-toggle="tab" href="#nav-chat" role="tab" aria-controls="nav-chat" aria-selected="false">Chat</a>
-                    </div>
-                  </nav>
-                <div class="tab-content" id="nav-tabContent">
-                  <!-- Brief -->
-                  <div class="tab-pane fade show active" id="nav-brief" role="tabpanel" aria-labelledby="nav-brief-tab">
-                    <div class="page">
-                      Brief
+                <div class="page project-tabs">
+                  <div class="tab-pane fade show active" id="v-pills-dashboard" data-toggle="pill" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+                    <nav class="project-nav">
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-brief-tab" data-toggle="tab" href="#nav-brief" role="tab" aria-controls="nav-breif" aria-selected="true">Breif</a>
+                        <a class="nav-item nav-link" id="nav-timeline-tab" data-toggle="tab" href="#nav-timeline" role="tab" aria-controls="nav-timeline" aria-selected="false">Timeline</a>
+                        <a class="nav-item nav-link" id="nav-chat-tab" data-toggle="tab" href="#nav-chat" role="tab" aria-controls="nav-chat" aria-selected="false">Chat</a>
+                      </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                      <!-- Brief -->
+                      <div class="tab-pane fade show active" id="nav-brief" role="tabpanel" aria-labelledby="nav-brief-tab">
+                        <div class="page">
+                          Brief
+                        </div>
+                      </div>
+                      <!-- Timeline -->
+                      <div class="tab-pane fade" id="nav-timeline" role="tabpanel" aria-labelledby="nav-timeline-tab">
+                        <div class="page">
+                          Timeline
+                        </div>
+                      </div>
+                      <!-- Chat -->
+                      <div class="tab-pane fade" id="nav-chat" role="tabpanel" aria-labelledby="nav-chat-tab">
+                        <div class="page">
+                          Chat
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <!-- Timeline -->
-                  <div class="tab-pane fade" id="nav-timeline" role="tabpanel" aria-labelledby="nav-timeline-tab">
-                    <div class="page">
-                      Timeline
-                    </div>
-                  </div>
-                  <!-- Chat -->
-                  <div class="tab-pane fade" id="nav-chat" role="tabpanel" aria-labelledby="nav-chat-tab">
-                    <div class="page">
-                      Chat
-                    </div>
-                  </div>
-                </div>
                 </div>
                 <!-- **********************************
                 *              Projects
@@ -126,7 +127,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script src="/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

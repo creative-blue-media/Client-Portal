@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Client Portal - Login</title>
+</head>
+<body>
+    <div class="page login-page d-flex justify-content-center align-items-center">
+        <div class="login card col-6">
+            <form class="login-form">
+                <img class="logo col-10" src="https://creativebluemediacontent.s3-us-west-1.amazonaws.com/Logo+Light.svg">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <a>Forgot Password?</a>
+                <a>Register Now</a> <br>
+                <button id="submitLogin" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script>
+        $("#submitLogin").on("click", function(event) {
+            event.preventDefault(); 
+            let email = $("#email").val(); 
+            console.log(email)
+        })
+
+    </script>
+</body>
+</html>
