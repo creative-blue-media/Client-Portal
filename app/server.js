@@ -16,7 +16,7 @@ const path = require("path");
 let app = express();
 let server = http.createServer(app);
 
-// app.use(express.static('public'))
+app.use(express.static('public'))
 // variables to Api for backend routes
 let user = require("./models/user/UserController")(app, express);
 let project = require("./models/project/ProjectController")(app, express);

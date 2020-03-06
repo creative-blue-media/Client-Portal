@@ -22,7 +22,7 @@ a {
 .logo {
     margin: auto;
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 /************************************/
 /*              Page Content
@@ -60,7 +60,8 @@ a {
     margin:0;
     position: relative;
     display: grid;
-    border-radius: 25px;
+    border-radius: 0;
+    box-shadow: #efefef 10px 10px;
 }
 .login-page{
     height: 100vh;
@@ -70,4 +71,16 @@ a {
 }
 .project-tabs {
     border: 1px solid #efefef;
+}
+#submitLogin{
+    margin-top: 10px;
+    background-color: #abe0f4;
+    border: #abe0f4;
+    border-radius: 0;
+    padding: 8px 35px;
+}
+.form-control {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #efefef;
 }

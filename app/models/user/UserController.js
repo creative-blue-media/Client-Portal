@@ -98,25 +98,25 @@ module.exports = function (app, express) {
         var body = _.pick(req.body, ['email', 'password']);
         console.log("In login", body);
 
-        // User.findByCredentials(body.email, body.password).then((user) => {
-        //     return user.generateAuthToken().then((token) => {
+        User.findByCredentials(body.email, body.password).then((user) => {
+            return user.generateAuthToken().then((token) => {
 
-        //         res.header("x-auth", token).send({
-        //             success: true,
-        //             message: "Login Success",
-        //             token: token,
-        //             user: user
-        //         });
+                res.header("x-auth", token).send({
+                    success: true,
+                    message: "Login Success",
+                    token: token,
+                    user: user
+                });
 
-        //         // console.log("Token is: ", token);
-        //     });
-        // }).catch((e) => {
-        //     res.status(400).send({
-        //         success: false,
-        //         message: "Login Unsuccessful",
-        //         error: e
-        //     });
-        // });
+                // console.log("Token is: ", token);
+            });
+        }).catch((e) => {
+            res.status(400).send({
+                success: false,
+                message: "Login Unsuccessful",
+                error: e
+            });
+        });
     });
 
     // user sign off
