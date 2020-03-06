@@ -35,4 +35,17 @@
     position: relative;
     padding:10px;
 }
-
+.nav-tabs .nav-link {
+    border:none;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: #fff #fff #fff;
+  border-bottom-color: #dee2e6;
+}
+.page-content .nav-link.active{
+    border-bottom: 5px solid #abe0f4;
+    border-radius: 0;
+}
