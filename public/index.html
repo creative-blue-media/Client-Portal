@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome.css" >
     <link rel="stylesheet" href="/assets/styles.css">
     <title>Client Portal</title>
 </head>
@@ -13,9 +14,7 @@
     <header>
     </header>
     <div class="jumbotron" id="content">
-        <!-- **********************************
-        *              SideBar
-        *********************************** -->
+        <!-- Sidebar -->
         <div class="sidebar container col-3">
               <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <li class="nav-item">
@@ -35,15 +34,13 @@
                 </li>
             </div>
         </div>
-        <!-- **********************************
-        *          Page Content Header
-        *********************************** -->
+        <!-- Page Content Header-->
         <div class="page-content container col-9">
             <div class="collapse bg-dark" id="navbarHeader">
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
-                      <h4 class="text-white">About</h4>
+                      <h4 class="text-white">Creative Blue Media</h4>
                       <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
@@ -57,19 +54,17 @@
                   </div>
                 </div>
               </div>
-              <div class="navbar navbar-dark bg-dark shadow-sm">
+              <div class="navbar navbar-light bg-light shadow-sm">
                 <div class="container d-flex justify-content-between">
                   <a href="#" class="navbar-brand d-flex align-items-center">
-                    <strong>Creative Blue Media</strong>
+                    
                   </a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-arrow-down"></i>
                   </button>
                 </div>
               </div>
-            <!-- **********************************
-            *              Page Content
-            *********************************** -->  
+            <!-- Page Content -->  
             <div class="tab-content" id="v-pills-tabContent">
                 <!-- **********************************
                 *              Dashboard
@@ -85,30 +80,48 @@
                 <div class="tab-content" id="nav-tabContent">
                   <!-- Brief -->
                   <div class="tab-pane fade show active" id="nav-brief" role="tabpanel" aria-labelledby="nav-brief-tab">
-
+                    <div class="page">
+                      Brief
+                    </div>
                   </div>
                   <!-- Timeline -->
                   <div class="tab-pane fade" id="nav-timeline" role="tabpanel" aria-labelledby="nav-timeline-tab">
-                    
+                    <div class="page">
+                      Timeline
+                    </div>
                   </div>
                   <!-- Chat -->
                   <div class="tab-pane fade" id="nav-chat" role="tabpanel" aria-labelledby="nav-chat-tab">
-                    
+                    <div class="page">
+                      Chat
+                    </div>
                   </div>
                 </div>
                 </div>
                 <!-- **********************************
                 *              Projects
                 *********************************** -->
-                <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">2</div>
+                <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">
+                  <div class="page">
+                    Projects
+                  </div>
+                </div>
                 <!-- **********************************
                 *              Invoices
                 *********************************** -->
-                <div class="tab-pane fade" id="v-pills-invoices" role="tabpanel" aria-labelledby="v-pills-invoices-tab">3</div>
+                <div class="tab-pane fade" id="v-pills-invoices" role="tabpanel" aria-labelledby="v-pills-invoices-tab">
+                  <div class="page">
+                    Invoices
+                  </div>
+                </div>
                 <!-- **********************************
                 *              Settings
                 *********************************** -->
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <div class="page">
+                    Settings
+                  </div>
+                </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

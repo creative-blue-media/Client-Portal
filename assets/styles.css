@@ -4,6 +4,9 @@
     position: absolute;
     padding: 0;
 }
+a {
+    color: #1e3a44 !important ;
+}
 /************************************/
 /*              SideBar
 /************************************/
@@ -30,10 +33,10 @@
     right:0;
     background-color: white;
 }
-.project-nav{
+.project-nav, .page{
     margin: 0;
     position: relative;
-    padding:10px;
+    padding:20px;
 }
 .nav-tabs .nav-link {
     border:none;
