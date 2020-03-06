@@ -16,7 +16,7 @@ const path = require("path");
 let app = express();
 let server = http.createServer(app);
 
-app.use(express.static('public'))
+app.use("/static", express.static('public'))
 // variables to Api for backend routes
 let user = require("./models/user/UserController")(app, express);
 let project = require("./models/project/ProjectController")(app, express);
@@ -32,7 +32,22 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended:true}));
 // app.use(morgan("dev"));
 
 
-// app.use(express.static(path.join(__dirname, '../public')));
+//app.use(express.static(path.join(__dirname, '../public')));
+
+
+app.get("/", function(req, res) {
+  console.log("AT ROOT");
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+})
+
+app.get("/login", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/login.html"));
+})
+
+app.get("/register", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/register.html"));
+})
+
 
 
 /**
