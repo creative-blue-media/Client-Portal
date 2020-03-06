@@ -13,7 +13,7 @@
   <header>
   </header>
   <div class="jumbotron" id="content">
-    <!-- Sidebar -->
+    <!-- Sidebar - Page List -->
     <div class="sidebar container col-3">
       <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <li class="nav-item">
@@ -63,10 +63,11 @@
       </div>
     </div>
     <div class="navbar navbar-light bg-light shadow-sm">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-
-        </a>
+      <div class="container d-flex justify-content-end">
+        <button class="start-project-btn" type="button" data-toggle="" data-target="#"
+          aria-controls="" aria-expanded="" aria-label="">
+          <Strong>New Project</Strong>
+        </button>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           +
@@ -78,8 +79,9 @@
       <!-- **********************************
       *              Dashboard
       *********************************** -->
-      <div class="tab-pane fade show active" id="v-pills-dashboard" data-toggle="pill" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
-        <div class="page project-tabs">
+      <div class="tab-pane fade show active" id="v-pills-dashboard" data-toggle="pill" role="tabpanel"
+        aria-labelledby="v-pills-dashboard-tab">
+        <div class="page">
           <nav class="project-nav">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <a class="nav-item nav-link active" id="nav-brief-tab" data-toggle="tab" href="#nav-brief" role="tab"
@@ -147,7 +149,7 @@
     <script src="/static/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script>
       console.log(window.sessionStorage.getItem("user"))
-      if(!window.sessionStorage.getItem("user")) {
+      if (!window.sessionStorage.getItem("user")) {
         window.location.href = "/login"
       }
     </script>
