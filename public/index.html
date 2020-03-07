@@ -13,9 +13,9 @@
 <body>
   <header>
   </header>
-  <div class="jumbotron" id="content">
-    <!-- Sidebar - Page List -->
-    <div class="sidebar container col-3">
+  <!-- Sidebar - Page List -->
+  <div class="container d-flex justify-content-start" id="content">
+    <div class="sidebar container">
       <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <li class="nav-item">
           <a href="#"><img class="logo"
@@ -41,8 +41,8 @@
       </div>
     </div>
   </div>
-  <!-- Page Content Header-->
-  <div class="page-content container col-9">
+  <!-- Active Page Content Header-->
+  <div class="active-page-content container">
     <div class="collapse bg-dark" id="navbarHeader">
       <div class="container">
         <div class="row">
@@ -51,6 +51,9 @@
             <p class="text-muted">Add some information about the album below, the author, or any other background
               context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off
               to some social networking sites or contact information.</p>
+            <div class="copyright">
+             <small>2019&nbsp;&copy;&nbsp; Creative Blue Media</small>
+            </div>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white">Contact</h4>
@@ -87,7 +90,7 @@
           <nav class="project-nav">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <a class="nav-item nav-link active" id="nav-brief-tab" data-toggle="tab" href="#nav-brief" role="tab"
-                aria-controls="nav-breif" aria-selected="true">Breif</a>
+                aria-controls="nav-breif" aria-selected="true">Brief</a>
               <a class="nav-item nav-link" id="nav-timeline-tab" data-toggle="tab" href="#nav-timeline" role="tab"
                 aria-controls="nav-timeline" aria-selected="false">Timeline</a>
               <a class="nav-item nav-link" id="nav-chat-tab" data-toggle="tab" href="#nav-chat" role="tab"
@@ -131,7 +134,123 @@
       <div class="tab-pane fade" id="v-pills-invoices" data-toggle="pill" role="tabpanel"
         aria-labelledby="v-pills-invoices-tab">
         <div class="page">
-          Invoices
+          <div class="kt-content kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+            <!-- begin:: Content -->
+              <div class="invoice-card card">   
+                <!--begin::Portlet-->
+                <div class="kt-portlet">
+                  <div class="kt-portlet__body kt-portlet__body--fit">
+                    <div class="kt-invoice-1">
+                      <div class="kt-invoice__head" style="background-color: blue;">
+                        <div class="kt-invoice__container">
+                          <div class="kt-invoice__brand">
+                            <h1 class="kt-invoice__title">INVOICE</h1>
+                              <span class="kt-invoice__desc">
+                                <span>Cecilia Chapman, 711-2880 Nulla St., Mankato</span>
+                                <span>Mississippi 96522</span>
+                              </span>
+                            </a>								
+                          </div>
+            
+                          <div class="kt-invoice__items">
+                            <div class="kt-invoice__item">
+                              <span class="kt-invoice__subtitle">INVOICE TO:</span>
+                              <span class="kt-invoice__desc">
+                                <span>Iris Watson, P.O. Box 283 8562 Fusce Rd.</span>
+                                <span>Frederick Nebraska 20620</span>
+                              </span>
+                            </div>
+                            <div class="kt-invoice__item">
+                              <div class="kt-invoice__info">
+                                <span class="kt-invoice__subtitle">DATE:</span>
+                                <span class="kt-invoice__text">Dec 12, 2018</span>
+                              </div>
+                              <div class="kt-invoice__info">
+                                <span class="kt-invoice__subtitle">INVOICE NO:</span>
+                                <span class="kt-invoice__text">GS000014</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>					 
+                      </div>
+            
+                      <div class="kt-invoice__body">
+                        <div class="kt-invoice__container">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>DESCRIPTION</th>
+                                  <th>HOURS</th>
+                                  <th>RATE</th>
+                                  <th>AMOUNT</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Creative Design</td>
+                                  <td>80</td>
+                                  <td>$40.00</td>
+                                  <td>$3200.00</td>
+                                </tr>
+                                <tr>
+                                  <td>Front-End Development</td>
+                                  <td>120</td>
+                                  <td>$40.00</td>
+                                  <td>$4800.00</td>
+                                </tr>
+                                <tr>
+                                  <td>Back-End Development</td>
+                                  <td>210</td>
+                                  <td>$60.00</td>
+                                  <td>$12600.00</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                   
+                      <div class="kt-invoice__footer">
+                        <div class="kt-invoice__container">
+                          <div class="kt-invoice__bank">
+                            <div class="kt-invoice__title">BANK TRANSFER</div>
+                            
+                            <div class="kt-invoice__item">
+                              <span class="kt-invoice__label">Account Name:</span>
+                              <span class="kt-invoice__value">Barclays UK</span>
+                            </div>
+            
+                            <div class="kt-invoice__item">
+                              <span class="kt-invoice__label">Account Number:</span>
+                              <span class="kt-invoice__value">1234567890934</span>
+                            </div>
+            
+                            <div class="kt-invoice__item">
+                              <span class="kt-invoice__label">Code:</span>
+                              <span class="kt-invoice__value">BARC0032UK</span>
+                            </div>
+                          </div>
+                          <div class="kt-invoice__total">
+                            <span class="kt-invoice__title">TOTAL AMOUNT</span>
+                            <span class="kt-invoice__price">$20.600.00</span>
+                            <span class="kt-invoice__notice">Taxes Included</span>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="kt-invoice__actions">
+                        <div class="kt-invoice__container">
+                          <button type="button" class="btn btn-label-brand btn-bold" onclick="window.print();">Download Invoice</button>
+                          <button type="button" class="btn btn-brand btn-bold" onclick="window.print();">Print Invoice</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>	
+                </div>
+                <!--end::Portlet-->
+               </div>
+            <!-- end:: Content -->							</div>
         </div>
       </div>
       <!-- **********************************
@@ -146,6 +265,8 @@
 
     </div>
 
+
+    
     <script src="/static/assets/jquery/jquery.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="/static/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
