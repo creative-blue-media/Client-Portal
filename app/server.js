@@ -35,6 +35,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended:true}));
 //app.use(express.static(path.join(__dirname, '../public')));
 
 
+
 app.get("/", function(req, res) {
   console.log("AT ROOT");
   res.sendFile(path.join(__dirname, "../public/index.html"));

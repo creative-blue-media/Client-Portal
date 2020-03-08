@@ -5,7 +5,9 @@ mongoose.Promise = global.Promise;
 let s = process.env.NODE;
 console.log("S is ", s)
 
-mongoose.connect("mongodb://localhost:27017/cbm", {useNewUrlParser: true})
+mongoose.connect("mongodb://18.218.152.27:27020/cbm", {useNewUrlParser: true})
+
+// mongoose.connect("mongodb://localhost:27017/cbm", {useNewUrlParser: true})
 
 // if (s == 'development') {
 //   mongoose.connect("mongodb://chronic:Chronic1@ds235850.mlab.com:35850/chronic-society")
