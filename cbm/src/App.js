@@ -7,7 +7,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
 import SettingsIcon from "@material-ui/icons/Settings";
 import Sidebar from './components/layout/sidebar/Sidebar'
-import Header from './components/layout/navigation/Navigation'
+import Header from './components/layout/navigation/header'
 import Dashboard from './components/layout/sidebar/dashboard/Dashboard'
 import Content from './components/layout/content/Content'
 
