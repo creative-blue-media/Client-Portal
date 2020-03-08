@@ -10,7 +10,7 @@ import Collapse from "@material-ui/core/Collapse";
 
 
 function SidebarItem({ item, depthStep = 10, toggle, depth = 0, ...rest }) {
-
+    console.log("REST IS: ", rest)
     const [collapsed, setCollapsed] = React.useState(true);
     const { label, items, Icon, onClick: onClickProp } = item;
 
@@ -19,6 +19,10 @@ function SidebarItem({ item, depthStep = 10, toggle, depth = 0, ...rest }) {
     }
 
     function onClick(e) {
+        if(!items || item.name == 'dashboard') {
+            rest.updateRoute(e, item);
+        }
+        
         if (Array.isArray(items)) {
             toggleCollapse();
         }
@@ -28,7 +32,7 @@ function SidebarItem({ item, depthStep = 10, toggle, depth = 0, ...rest }) {
     }
 
     let expandIcon;
-    if (Array.isArray(items) && items.length) {
+    if (Array.isArray(items) && items.length && item.name != 'dashboard') {
         expandIcon = !collapsed ? (
             <ExpandLessIcon
                 className={
@@ -54,7 +58,7 @@ function SidebarItem({ item, depthStep = 10, toggle, depth = 0, ...rest }) {
             <Collapse in={!collapsed} timeout="auto" unmountOnExit>
                 {Array.isArray(items) ? (
                     <List disablePadding dense>
-                        {items.map((subItem, index) => (
+                        {(item.name != 'dashboard') ? items.map((subItem, index) => (
                             <React.Fragment key={`${subItem.name}${index}`}>
                                 {subItem === "divider" ? (
                                     <Divider style={{ margin: "6px 0" }} />
@@ -63,10 +67,11 @@ function SidebarItem({ item, depthStep = 10, toggle, depth = 0, ...rest }) {
                                             depth={depth + 1}
                                             depthStep={depthStep}
                                             item={subItem}
+                                            {...rest}
                                         />
                                     )}
                             </React.Fragment>
-                        ))}
+                        )) : null}
                     </List>
                 ) : null}
             </Collapse>

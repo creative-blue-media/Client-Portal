@@ -7,12 +7,12 @@ import Divider from "@material-ui/core/Divider";
 import SidebarItem from './SidebarItem';
 
 
-function Sidebar({ items, depthStep, depth, expanded }) {
+function Sidebar({ items, depthStep, depth, expanded, ...rest }) {
 
     return (
         <div className="sidebar">
             <div>
-                <a href="#"><img class="logo"
+                <a href="#"><img className="logo"
                     src="https://creativebluemediacontent.s3-us-west-1.amazonaws.com/Logo+Light.svg" /></a>
             </div>
             <List disablePadding dense>
@@ -26,6 +26,7 @@ function Sidebar({ items, depthStep, depth, expanded }) {
                                     depth={depth}
                                     expanded={expanded}
                                     item={sidebarItem}
+                                    {...rest}
                                 />
                             )}
                     </React.Fragment>
