@@ -1,0 +1,242 @@
+<div className="container d-flex justify-content-start" id="content">
+    <div className="sidebar container">
+      <div className="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <li className="nav-item">
+          <a href="#"><img className="logo"
+            src="https://creativebluemediacontent.s3-us-west-1.amazonaws.com/Logo+Light.svg" />
+          </a>
+        </li>
+        <a className="nav-link active" id="v-pills-dashboard-tab" data-toggle="pill" href="#v-pills-dashboard" role="tab"
+          aria-controls="v-pills-dashboard" aria-selected="true">Dashboard</a>
+        <a className="nav-link" id="v-pills-projects-tab" data-toggle="pill" href="#v-pills-projects" role="tab"
+          aria-controls="v-pills-projects" aria-selected="false">Projects</a>
+        <a className="nav-link" id="v-pills-invoices-tab" data-toggle="pill" href="#v-pills-invoices" role="tab"
+          aria-controls="v-pills-invoices" aria-selected="false">Invoices</a>
+        <a className="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+          aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+        <li className="nav-link dropdown">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Settings</a>
+          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a className="dropdown-item" href="#">Profile</a>
+            <a className="dropdown-item" href="#">Files</a>
+            <a className="dropdown-item" href="#">Billing</a>
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>
+  <div class="active-page-content container">
+
+  <div className="collapse bg-dark" id="navbarHeader">
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-8 col-md-7 py-4">
+          <h4 className="text-white">Creative Blue Media</h4>
+          <p className="text-muted">Add some information about the album below, the author, or any other background
+            context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off
+          to some social networking sites or contact information.</p>
+          <div className="copyright">
+            <small>2019&nbsp;&copy;&nbsp; Creative Blue Media</small>
+          </div>
+        </div>
+        <div className="col-sm-4 offset-md-1 py-4">
+          <h4 className="text-white">Contact</h4>
+          <ul className="list-unstyled">
+            <li><a href="#" className="text-white">Follow on Twitter</a></li>
+            <li><a href="#" className="text-white">Like on Facebook</a></li>
+            <li><a href="#" className="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* <!-- Page Content --> */}
+  <div className="tab-content" id="v-pills-tabContent">
+    {/* <!-- **********************************
+  *              Dashboard
+  *********************************** --> */}
+    <div className="tab-pane fade show active" id="v-pills-dashboard" data-toggle="pill" role="tabpanel"
+      aria-labelledby="v-pills-dashboard-tab">
+      <div className="page">
+        <nav className="project-nav">
+          <div className="nav nav-tabs" id="nav-tab" role="tablist">
+            <a className="nav-item nav-link active" id="nav-brief-tab" data-toggle="tab" href="#nav-brief" role="tab"
+              aria-controls="nav-breif" aria-selected="true">Brief</a>
+            <a className="nav-item nav-link" id="nav-timeline-tab" data-toggle="tab" href="#nav-timeline" role="tab"
+              aria-controls="nav-timeline" aria-selected="false">Timeline</a>
+            <a className="nav-item nav-link" id="nav-chat-tab" data-toggle="tab" href="#nav-chat" role="tab"
+              aria-controls="nav-chat" aria-selected="false">Chat</a>
+          </div>
+        </nav>
+        <div className="tab-content" id="nav-tabContent">
+          {/* <!-- Brief --> */}
+          <div className="tab-pane fade show active" id="nav-brief" role="tabpanel" aria-labelledby="nav-brief-tab">
+            <div className="page">
+              Brief
+          </div>
+          </div>
+          {/* <!-- Timeline --> */}
+          <div className="tab-pane fade" id="nav-timeline" role="tabpanel" aria-labelledby="nav-timeline-tab">
+            <div className="page">
+              Timeline
+          </div>
+          </div>
+          {/* <!-- Chat --> */}
+          <div className="tab-pane fade" id="nav-chat" role="tabpanel" aria-labelledby="nav-chat-tab">
+            <div className="page">
+              Chat
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* <!-- **********************************
+  *              Projects
+  *********************************** --> */}
+    <div className="tab-pane fade" id="v-pills-projects" data-toggle="pill" role="tabpanel"
+      aria-labelledby="v-pills-projects-tab">
+      <div className="page">
+        Projects
+    </div>
+    </div>
+    {/* <!-- **********************************
+  *              Invoices
+  *********************************** --> */}
+    <div className="tab-pane fade" id="v-pills-invoices" data-toggle="pill" role="tabpanel"
+      aria-labelledby="v-pills-invoices-tab">
+      <div className="page">
+        <div className="kt-content kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+          {/* <!-- begin:: Content --> */}
+          <div className="invoice-card card">
+            {/* <!--begin::Portlet--> */}
+            <div className="kt-portlet">
+              <div className="kt-portlet__body kt-portlet__body--fit">
+                <div className="kt-invoice-1">
+                  <div className="kt-invoice__head" style={{ backgroundColor: '#0000ff' }}>
+                    <div className="kt-invoice__container">
+                      <div className="kt-invoice__brand">
+                        <a>
+                          <h1 className="kt-invoice__title">INVOICE</h1>
+                          <span className="kt-invoice__desc">
+                            <span>Cecilia Chapman, 711-2880 Nulla St., Mankato</span>
+                            <span>Mississippi 96522</span>
+                          </span>
+                        </a>
+                      </div>
+
+                      <div className="kt-invoice__items">
+                        <div className="kt-invoice__item">
+                          <span className="kt-invoice__subtitle">INVOICE TO:</span>
+                          <span className="kt-invoice__desc">
+                            <span>Iris Watson, P.O. Box 283 8562 Fusce Rd.</span>
+                            <span>Frederick Nebraska 20620</span>
+                          </span>
+                        </div>
+                        <div className="kt-invoice__item">
+                          <div className="kt-invoice__info">
+                            <span className="kt-invoice__subtitle">DATE:</span>
+                            <span className="kt-invoice__text">Dec 12, 2018</span>
+                          </div>
+                          <div className="kt-invoice__info">
+                            <span className="kt-invoice__subtitle">INVOICE NO:</span>
+                            <span className="kt-invoice__text">GS000014</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="kt-invoice__body">
+                    <div className="kt-invoice__container">
+                      <div className="table-responsive">
+                        <table className="table">
+                          <thead>
+                            <tr>
+                              <th>DESCRIPTION</th>
+                              <th>HOURS</th>
+                              <th>RATE</th>
+                              <th>AMOUNT</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Creative Design</td>
+                              <td>80</td>
+                              <td>$40.00</td>
+                              <td>$3200.00</td>
+                            </tr>
+                            <tr>
+                              <td>Front-End Development</td>
+                              <td>120</td>
+                              <td>$40.00</td>
+                              <td>$4800.00</td>
+                            </tr>
+                            <tr>
+                              <td>Back-End Development</td>
+                              <td>210</td>
+                              <td>$60.00</td>
+                              <td>$12600.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="kt-invoice__footer">
+                    <div className="kt-invoice__container">
+                      <div className="kt-invoice__bank">
+                        <div className="kt-invoice__title">BANK TRANSFER</div>
+
+                        <div className="kt-invoice__item">
+                          <span className="kt-invoice__label">Account Name:</span>
+                          <span className="kt-invoice__value">Barclays UK</span>
+                        </div>
+
+                        <div className="kt-invoice__item">
+                          <span className="kt-invoice__label">Account Number:</span>
+                          <span className="kt-invoice__value">1234567890934</span>
+                        </div>
+
+                        <div className="kt-invoice__item">
+                          <span className="kt-invoice__label">Code:</span>
+                          <span className="kt-invoice__value">BARC0032UK</span>
+                        </div>
+                      </div>
+                      <div className="kt-invoice__total">
+                        <span className="kt-invoice__title">TOTAL AMOUNT</span>
+                        <span className="kt-invoice__price">$20.600.00</span>
+                        <span className="kt-invoice__notice">Taxes Included</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="kt-invoice__actions">
+                    <div className="kt-invoice__container">
+                      <button type="button" className="btn btn-label-brand btn-bold">Download Invoice</button>
+                      <button type="button" className="btn btn-brand btn-bold">Print Invoice</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <!--end::Portlet--> */}
+          </div>
+          {/* <!-- end:: Content -->							 */}
+        </div>
+      </div>
+    </div>
+    {/* <!-- **********************************
+   *              Settings
+   *********************************** --> */}
+    <div className="tab-pane fade" id="v-pills-settings" data-toggle="pill" role="tabpanel"
+      aria-labelledby="v-pills-settings-tab">
+      <div className="page">
+        Settings
+    </div>
+    </div>
+
+  </div>
+  </div>
